@@ -13,11 +13,13 @@
     <!--Nombre de la pastelería-->
     <h1>Pastelería Amanecer</h1>
     <hr>
-    <p>Sea bienvenido al sitio de una de las mejores pastelerías de la CDMX.</p> 
-    <p>Aquí podrá ver los sabores con los que trabajamos, elegir la combinación de su preferencia y realizar su pedido.</p>
-    <p>Las partes del pastel para seleccionar son: pan o bizcocho, relleno, cubierta y adornos.</p>
+    <!--Mensaje de bienvenida y explicación-->
+    <p>Sea bienvenido al sitio de una de las mejores pastelerías de la CDMX.<br>
+    Aquí podrá ver los sabores con los que trabajamos, elegir la combinación de su preferencia y realizar su pedido.<br>
+    Las partes del pastel para seleccionar son: pan o bizcocho, relleno, cubierta y adornos.</p>
     <hr>
-    <h2>Sabores y Precios</h2>
+    <!--Listas de componentes y precios-->
+    <h2>Sabores y precios</h2>
 
     <h3>Pan o Bizcocho</h2>
     <ul> 
@@ -30,7 +32,6 @@
     <h3>Relleno</h3>
     <ul>
         <li>Mermelada de fresa...........................$15.00</li>
-        <li>Mermelada de durazno..................... $15.00</li>
         <li>Mermelada de zarzamora................. $20.00</li>
         <li>Ganache (chocolate cremoso).......... $25.00</li>
         <li>Queso............................................... $25.00</li>
@@ -45,12 +46,74 @@
 
     <h3>Adornos</h3>
     <ul>
-        <li>Caramelo suave................... $10.00</li>
-        <li>Frutas................................... $25.00</li>
-        <li>Figuras con fondant............. $40.00</li>
+        <li>Caramelo suave (3 figuras)................... $10.00</li>
+        <li>Frutas (5 piezas)................................... $25.00</li>
+        <li>Figuras con fondant (3 figuras)............. $40.00</li>
     </ul>
     <hr>
-    <h2>Elección de Sabores</h2>
+    <!--Formulario del pedido-->  
+    <h2>Elección de sabores para el pedido</h2>
+    <form action="./pedido.js" id="form1">
+        <h3>Pan o Bizcocho</h3>
+        <input type="radio" id="Pan_vainilla" name="Bizcocho" value="vainilla">
+        <label for="Pan_vainilla">Vainilla</label><br>
+        <input type="radio" id="Pan_chocolate" name="Bizcocho" value="chocolate">
+        <label for="Pan_chocolate">Chocolate</label><br>
+        <input type="radio" id="Pan_fresa" name="Bizcocho" value="fresa">
+        <label for="Pan_fresa">Fresa</label><br>
+        <input type="radio" id="Pan_limon" name="Bizcocho" value="limon">
+        <label for="Pan_limon">Limón</label><br><br>
 
+        <h3>Rellenos</h3>
+        <input type="checkbox" id="MermeladaF" name="MermeladaF" value="mermelada de fresa">
+        <label for="MermeladaF">Mermelada de fresa</label><br>
+        <input type="checkbox" id="MermeladaZ" name="MermeladaZ" value="mermelada de zarzamora">
+        <label for="MermeladaZ">Mermelada de zarzamora</label><br>
+        <input type="checkbox" id="Ganache" name="Ganache" value="ganache">
+        <label for="Ganache">Ganache (chocolate cremoso)</label><br>
+        <input type="checkbox" id="Queso" name="Queso" value="queso">
+        <label for="Queso">Queso</label><br><br>
+
+        <h3>Cubierta</h3>
+        <input type="radio" id="Cubre_crema" name="cubierta" value="crema batida">
+        <label for="Cubre_crema">Crema batida</label><br>
+        <input type="radio" id="Cubre_chocolate" name="cubierta" value="chocolate">
+        <label for="Cubre_chocolate">Chocolate</label><br>
+        <input type="radio" id="Cubre_fondant" name="cubierta" value="fondant">
+        <label for="Cubre_fondant">Fondant</label><br><br>
+
+        <h3>Adornos</h3>
+        <input type="checkbox" id="Adorno_caramelo" name="Adorno_caramelo" value="caramelo">
+        <label for="Adorno_caramelo">Caramelo suave</label><br>
+        <input type="checkbox" id="Adorno_Frutas" name="Adorno_Frutas" value="frutas">
+        <label for="Adorno_Frutas">Frutas</label><br>
+        <input type="checkbox" id="Adorno_Fondant" name="Adorno_Fondant" value="fondant">
+        <label for="Adorno_Fondant">Figuras con fondant</label><br><br>
+
+        <hr>
+
+        <h2>Confirmar pedido</h2>
+    
+        <label for="nombre_cliente">Nombre completo:</label>
+        <input type="text" id="nombre_cliente" name="nombre"><br><br>
+        <label for="tel1">Teléfono:</label>
+        <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+        <label for="correo1">Correo electrónico:</label>
+        <input type="email" id="correo1" name="correo1"><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+        
+    </form>
+    <br><br>
+    <hr>
+    <h3>Contacto</h3>
+    <p>
+        Dirección: Av. Revolución 779, Nonoalco, Benito Juárez, 03700 Ciudad de México, CDMX<br>
+        Teléfono: 55 5555 5555<br>
+        Horario: Todos los días de 9:00 am a 9:30 pm
+    </p>
+    
+    <br><br>
 </body>
 </html>
