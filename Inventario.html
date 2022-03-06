@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario Pastelería Amanecer</title>
+    <style></style>
+</head>
+<body>
+    <!--Logo de la pastelería-->
+    <img src="https://github.com/AndresSantiago08/Practicas_HTML/blob/main/Pasteleria.png?raw=true" alt="Logo pasteleria amanecer" width="200px" height="200px">    
+    <!--Nombre de la pastelería-->
+    <h1>Pastelería Amanecer (Inventario)</h1>
+    <hr>
+    <!--Listas de componentes y cantidaades disponibles
+    los campos son de solo lectura-->
+    <h2>Sabores y porciones disponibles</h2>
+    
+    <h3>Pan o Bizcocho (Piezas)</h3>
+
+    <label for="bizVainilla">Vainilla:</label>
+    <input type="text" id="bizVainilla" name="bizVainilla" value="8" readonly><br>
+    <label for="bizChocolate">Chocolate:</label>
+    <input type="text" id="bizChocolate" name="bizChocolate" value="10" readonly><br>
+    <label for="bizFresa">Fresa:</label>
+    <input type="text" id="bizFresa" name="bizFresa" value="4" readonly><br>
+    <label for="bizLimon">Limón:</label>
+    <input type="text" id="bizLimon" name="bizLimon" value="2" readonly><br><br>
+
+    <h3>Rellenos (Porciones)</h3>
+
+    <label for="rellenoMermeladaF">Mermelada de fresa:</label>
+    <input type="text" id="rellenoMermeladaF" name="rellenoMermeladaF" value="12" readonly><br>
+    <label for="rellenoMermeladaZ">Mermelada de zarzamora:</label>
+    <input type="text" id="rellenoMermeladaZ" name="rellenoMermeladaZ" value="12" readonly><br>
+    <label for="rellenoGanache">Ganache (chocolate cremoso):</label>
+    <input type="text" id="rellenoGanache" name="rellenoGanache" value="10" readonly><br>
+    <label for="rellenoQueso">Queso:</label>
+    <input type="text" id="rellenoQueso" name="rellenoQueso" value="12" readonly><br><br>
+
+    <h3>Cubierta (Porciones)</h3>
+
+    <label for="cubiertaCrema">Crema batida:</label>
+    <input type="text" id="cubiertaCrema" name="cubiertaCrema" value="12" readonly><br>
+    <label for="cubiertaChocolate">Chocolate:</label>
+    <input type="text" id="cubiertaChocolate" name="cubiertaChocolate" value="10" readonly><br>
+    <label for="cubiertaFondant">Fondant:</label>
+    <input type="text" id="cubiertaFondant" name="cubiertaFondant" value="8" readonly><br>
+
+    <h3>Adornos (Piezas)</h3>
+
+    <label for="adornoCaramelo">Caramelo suave:</label>
+    <input type="text" id="adornoCaramelo" name="adornoCaramelo" value="36" readonly><br>
+    <label for="adornoFrutas">Frutas:</label>
+    <input type="text" id="adornoFrutas" name="adornoFrutas" value="50" readonly><br>
+    <label for="adornoFondant">Fondant:</label>
+    <input type="text" id="adornoFondant" name="adornoFondant" value="30" readonly><br>
+
+    <br><br>
+    <hr>
+    <!--Datos que se obtienen del pedido realizado-->
+    <h2>Último pedido</h2>
+    
+    <h3>Pan o Bizcocho</h3>
+    <input type="radio" id="Pan_vainilla" name="Bizcocho" value="vainilla" disabled="true">
+    <label for="Pan_vainilla">Vainilla</label><br>
+    <input type="radio" id="Pan_chocolate" name="Bizcocho" value="chocolate" disabled="true">
+    <label for="Pan_chocolate">Chocolate</label><br>
+    <input type="radio" id="Pan_fresa" name="Bizcocho" value="fresa" disabled="true">
+    <label for="Pan_fresa">Fresa</label><br>
+    <input type="radio" id="Pan_limon" name="Bizcocho" value="limon" disabled="true">
+    <label for="Pan_limon">Limón</label><br><br>
+
+    <h3>Rellenos</h3>
+    <input type="checkbox" id="MermeladaF" name="Relleno1" value="mermeladaFresa" disabled="true">
+    <label for="MermeladaF">Mermelada de fresa</label><br>
+    <input type="checkbox" id="MermeladaZ" name="Relleno2" value="mermeladaZarzamora" disabled="true">
+    <label for="MermeladaZ">Mermelada de zarzamora</label><br>
+    <input type="checkbox" id="Ganache" name="Relleno3" value="ganache" disabled="true">
+    <label for="Ganache">Ganache (chocolate cremoso)</label><br>
+    <input type="checkbox" id="Queso" name="Relleno4" value="queso" disabled="true">
+    <label for="Queso">Queso</label><br><br>
+
+    <h3>Cubierta</h3>
+    <input type="radio" id="Cubre_crema" name="Cubierta" value="cremaBatida" disabled="true">
+    <label for="Cubre_crema">Crema batida</label><br>
+    <input type="radio" id="Cubre_chocolate" name="Cubierta" value="chocolate" disabled="true">
+    <label for="Cubre_chocolate">Chocolate</label><br>
+    <input type="radio" id="Cubre_fondant" name="Cubierta" value="fondant" disabled="true">
+    <label for="Cubre_fondant">Fondant</label><br><br>
+
+    <h3>Adornos</h3>
+    <input type="checkbox" id="Adorno_Caramelo" name="Adorno1" value="caramelo" disabled="true">
+    <label for="Adorno_caramelo">Caramelo suave</label><br>
+    <input type="checkbox" id="Adorno_Frutas" name="Adorno2" value="frutas" disabled="true">
+    <label for="Adorno_Frutas">Frutas</label><br>
+    <input type="checkbox" id="Adorno_Fondant" name="Adorno3" value="fondant" disabled="true">
+    <label for="Adorno_Fondant">Figuras con fondant</label><br><br>
+    <hr>
+    <br>
+
+    <!--Función para obtener los datos del formulario usando la cadena del URL,
+    se separa la cadena para encontrar los datos con un ciclo for y sentencias if,
+    si hay coincidencias se marcan los campos que correspondan al pedido-->
+    <script>
+        function getURL() {
+            var URL = window.location.href;
+            
+            var DatosFormulario = URL.split("?");
+            var ArrayDatos = DatosFormulario[1].split("&");
+
+            for (var i=0; i < ArrayDatos.length; i++) {
+                if (ArrayDatos[i].split("=")[0] == "Bizcocho" && ArrayDatos[i].split("=")[1] == "vainilla")
+                {
+                    document.getElementById("Pan_vainilla").checked = true;
+                }
+                else if (ArrayDatos[i].split("=")[0] == "Bizcocho" && ArrayDatos[i].split("=")[1] == "chocolate")
+                {
+                    document.getElementById("Pan_chocolate").checked = true;
+                }
+                else if (ArrayDatos[i].split("=")[0] == "Bizcocho" && ArrayDatos[i].split("=")[1] == "fresa")
+                {
+                    document.getElementById("Pan_fresa").checked = true;
+                }
+                else if (ArrayDatos[i].split("=")[0] == "Bizcocho" && ArrayDatos[i].split("=")[1] == "limon")
+                {
+                    document.getElementById("Pan_limon").checked = true;
+                }
+                else if (ArrayDatos[i].split("=")[0] == "Relleno1")
+                {
+                    document.getElementById("MermeladaF").checked = true;
+                }
+                else if (ArrayDatos[i].split("=")[0] == "Relleno2")
+                {
+                    document.getElementById("MermeladaZ").checked = true;
+                }
+                else if (ArrayDatos[i].split("=")[0] == "Relleno3")
+                {
+                    document.getElementById("Ganache").checked = true;
+                }
+                else if (ArrayDatos[i].split("=")[0] == "Relleno4")
+                {
+                    document.getElementById("Queso").checked = true;
+                }
+                else if (ArrayDatos[i].split("=")[0] == "Cubierta" && ArrayDatos[i].split("=")[1] == "cremaBatida")
+                {
+                    document.getElementById("Cubre_crema").checked = true;
+                }
+                else if (ArrayDatos[i].split("=")[0] == "Cubierta" && ArrayDatos[i].split("=")[1] == "chocolate")
+                {
+                    document.getElementById("Cubre_chocolate").checked = true;
+                }
+                else if (ArrayDatos[i].split("=")[0] == "Cubierta" && ArrayDatos[i].split("=")[1] == "fondant")
+                {
+                    document.getElementById("Cubre_fondant").checked = true;
+                }
+                else if (ArrayDatos[i].split("=")[0] == "Adorno1")
+                {
+                    document.getElementById("Adorno_Caramelo").checked = true;
+                }
+                else if (ArrayDatos[i].split("=")[0] == "Adorno2")
+                {
+                    document.getElementById("Adorno_Frutas").checked = true;
+                }
+                else if (ArrayDatos[i].split("=")[0] == "Adorno3")
+                {
+                    document.getElementById("Adorno_Fondant").checked = true;
+                }
+            }
+
+        }
+        window.onload = getURL();
+    </script>
+
+</body>
+</html>
