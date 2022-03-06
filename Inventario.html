@@ -61,45 +61,54 @@
     <hr>
     <!--Datos que se obtienen del pedido realizado-->
     <h2>Último pedido</h2>
-    
-    <h3>Pan o Bizcocho</h3>
-    <input type="radio" id="Pan_vainilla" name="Bizcocho" value="vainilla" disabled="true">
-    <label for="Pan_vainilla">Vainilla</label><br>
-    <input type="radio" id="Pan_chocolate" name="Bizcocho" value="chocolate" disabled="true">
-    <label for="Pan_chocolate">Chocolate</label><br>
-    <input type="radio" id="Pan_fresa" name="Bizcocho" value="fresa" disabled="true">
-    <label for="Pan_fresa">Fresa</label><br>
-    <input type="radio" id="Pan_limon" name="Bizcocho" value="limon" disabled="true">
-    <label for="Pan_limon">Limón</label><br><br>
-
-    <h3>Rellenos</h3>
-    <input type="checkbox" id="MermeladaF" name="Relleno1" value="mermeladaFresa" disabled="true">
-    <label for="MermeladaF">Mermelada de fresa</label><br>
-    <input type="checkbox" id="MermeladaZ" name="Relleno2" value="mermeladaZarzamora" disabled="true">
-    <label for="MermeladaZ">Mermelada de zarzamora</label><br>
-    <input type="checkbox" id="Ganache" name="Relleno3" value="ganache" disabled="true">
-    <label for="Ganache">Ganache (chocolate cremoso)</label><br>
-    <input type="checkbox" id="Queso" name="Relleno4" value="queso" disabled="true">
-    <label for="Queso">Queso</label><br><br>
-
-    <h3>Cubierta</h3>
-    <input type="radio" id="Cubre_crema" name="Cubierta" value="cremaBatida" disabled="true">
-    <label for="Cubre_crema">Crema batida</label><br>
-    <input type="radio" id="Cubre_chocolate" name="Cubierta" value="chocolate" disabled="true">
-    <label for="Cubre_chocolate">Chocolate</label><br>
-    <input type="radio" id="Cubre_fondant" name="Cubierta" value="fondant" disabled="true">
-    <label for="Cubre_fondant">Fondant</label><br><br>
-
-    <h3>Adornos</h3>
-    <input type="checkbox" id="Adorno_Caramelo" name="Adorno1" value="caramelo" disabled="true">
-    <label for="Adorno_caramelo">Caramelo suave</label><br>
-    <input type="checkbox" id="Adorno_Frutas" name="Adorno2" value="frutas" disabled="true">
-    <label for="Adorno_Frutas">Frutas</label><br>
-    <input type="checkbox" id="Adorno_Fondant" name="Adorno3" value="fondant" disabled="true">
-    <label for="Adorno_Fondant">Figuras con fondant</label><br><br>
-    <hr>
+    <!--Tabla del último pedido-->
+    <table>
+        <tr><!--Fila 0 - Encabezados-->
+            <th>Pan o bizcocho</th>
+            <th>Rellenos</th>
+            <th>Cubierta</th>
+            <th>Adornos</th>
+        </tr>
+        <tr><!--Fila 1 - Campo 1 de Pan, Campo 1 de Rellenos, Campo 1 de Cubierta, Campo 1 de Adornos-->
+            <td><input type="radio" id="Pan_vainilla" name="Bizcocho" value="vainilla" disabled="true">
+                <label for="Pan_vainilla">Vainilla</label></td>
+            <td><input type="checkbox" id="MermeladaF" name="Relleno1" value="mermeladaFresa" disabled="true">
+                <label for="MermeladaF">Mermelada de fresa</label></td>
+            <td><input type="radio" id="Cubre_crema" name="Cubierta" value="cremaBatida" disabled="true">
+                <label for="Cubre_crema">Crema batida</label></td>
+            <td><input type="checkbox" id="Adorno_Caramelo" name="Adorno1" value="caramelo" disabled="true">
+                <label for="Adorno_caramelo">Caramelo suave</label></td>
+        </tr>
+        <tr><!--Fila 2 - Campo 2 de Pan, Campo 2 de Rellenos, Campo 2 de Cubierta, Campo 2 de Adornos-->
+            <td><input type="radio" id="Pan_chocolate" name="Bizcocho" value="chocolate" disabled="true">
+                <label for="Pan_chocolate">Chocolate</label></td>
+            <td><input type="checkbox" id="MermeladaZ" name="Relleno2" value="mermeladaZarzamora" disabled="true">
+                <label for="MermeladaZ">Mermelada de zarzamora</label></td>
+            <td><input type="radio" id="Cubre_chocolate" name="Cubierta" value="chocolate" disabled="true">
+                <label for="Cubre_chocolate">Chocolate</label></td>
+            <td><input type="checkbox" id="Adorno_Frutas" name="Adorno2" value="frutas" disabled="true">
+                <label for="Adorno_Frutas">Frutas</label></td>
+        </tr>
+        <tr><!--Fila 3 - Campo 3 de Pan, Campo 3 de Rellenos, Campo 3 de Cubierta, Campo 3 de Adornos-->
+            <td><input type="radio" id="Pan_fresa" name="Bizcocho" value="fresa" disabled="true">
+                <label for="Pan_fresa">Fresa</label></td>
+            <td><input type="checkbox" id="Ganache" name="Relleno3" value="ganache" disabled="true">
+                <label for="Ganache">Ganache (chocolate cremoso)</label></td>
+            <td><input type="radio" id="Cubre_fondant" name="Cubierta" value="fondant" disabled="true">
+                <label for="Cubre_fondant">Fondant</label></td>
+            <td><input type="checkbox" id="Adorno_Fondant" name="Adorno3" value="fondant" disabled="true">
+                <label for="Adorno_Fondant">Figuras con fondant</label></td>
+        </tr>
+        <tr><!--Fila 4 - Campo 4 de Pan, Campo 4 de Rellenos-->
+            <td><input type="radio" id="Pan_limon" name="Bizcocho" value="limon" disabled="true">
+                <label for="Pan_limon">Limón</label></td>
+            <td><input type="checkbox" id="Queso" name="Relleno4" value="queso" disabled="true">
+                <label for="Queso">Queso</label></td>
+        </tr>
+    </table>
     <br>
-
+    <hr>
+    <br><br>
     <!--Función para obtener los datos del formulario usando la cadena del URL,
     se separa la cadena para encontrar los datos con un ciclo for y sentencias if,
     si hay coincidencias se marcan los campos que correspondan al pedido-->
